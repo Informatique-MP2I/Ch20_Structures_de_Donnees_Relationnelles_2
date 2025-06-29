@@ -1,0 +1,110 @@
+# Doxyfile 1.8.13
+
+# This file is a configuration file for Doxygen, a documentation generation tool.
+# For details on all possible options, see:
+# https://www.doxygen.nl/manual/config.html
+
+# Project settings
+PROJECT_NAME           = "Dijkstra Shortest Path"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "A project to implement Dijkstra's shortest path algorithm"
+OUTPUT_DIRECTORY       = docs
+
+# Build settings
+CREATE_SUBDIRS         = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+EXTRACT_LOCAL_METHODS  = NO
+EXTRACT_ANON_NSPACES   = NO
+
+# File patterns
+FILE_PATTERNS          = *.c *.h
+RECURSIVE              = YES
+
+# HTML output
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+
+# Disable other outputs
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+GENERATE_DOCBOOK       = NO
+
+# Input
+INPUT                  = src include README.md
+INPUT_ENCODING         = UTF-8
+
+# Documentation
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+SHOW_USED_FILES        = YES
+SHOW_FILES             = YES
+SHOW_NAMESPACES        = NO
+INLINE_INFO            = YES
+
+# Tab settings
+TAB_SIZE               = 4
+
+# Internal settings
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = YES
+SORT_GROUP_NAMES       = YES
+SORT_BY_SCOPE_NAME     = YES
+
+# Preprocessor
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           =
+INCLUDE_FILE_PATTERNS  =
+PREDEFINED             =
+EXPAND_AS_DEFINED      =
+SKIP_FUNCTION_MACROS   = YES
+
+# External tools
+CLASS_DIAGRAMS         = NO
+HAVE_DOT               = NO
+DOT_FONTNAME           = Helvetica
+DOT_FONTSIZE           = 10
+DOT_FONTPATH           =
+CLASS_GRAPH            = NO
+COLLABORATION_GRAPH    = NO
+GROUP_GRAPHS           = NO
+UML_LOOK               = NO
+TEMPLATE_RELATIONS     = NO
+INCLUDE_GRAPH          = NO
+INCLUDED_BY_GRAPH      = NO
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+GRAPHICAL_HIERARCHY    = NO
+DIRECTORY_GRAPH        = NO
+DOT_IMAGE_FORMAT       = png
+DOT_PATH               =
+DOTFILE_DIRS           =
+MSCGEN_PATH            =
+DIA_PATH               =
+PLANTUML_JAR_PATH      =
+PLANTUML_INCLUDE_PATH  =
+PLANTUML_CFG_FILE      =
+
+# If the MARKDOWN_SUPPORT tag is enabled (YES) then doxygen pre-processes all
+# comments to recognize Markdown formatting commands.
+# Disabled by default.
+MARKDOWN_SUPPORT = YES
+
+# The USE_MDFILE_AS_MAINPAGE tag can be used to specify a markdown file that
+# should be used as the main page for the documentation.
+USE_MDFILE_AS_MAINPAGE = README.md
+
+# If the GENERATE_TODOLIST tag is set to YES, doxygen will generate a page
+# with a list of all TODO comments in the source code.
+GENERATE_TODOLIST = YES
+
